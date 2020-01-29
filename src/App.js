@@ -2,6 +2,7 @@ import React from "react";
 import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import Questions from "./components/Questions";
+import Title from "./components/Title";
 
 const App = () => {
   const characters = [
@@ -14,14 +15,14 @@ const App = () => {
     "Olenna Tyrell",
     "Renly Baratheon",
     "Tyrion",
-    "Varys"
+    "Varys",
   ];
 
   return (
     <>
       <Nav />
-      <Landing />
-      <Questions />
+      <Title />
+      {/* <Questions characters={characters} /> */}
     </>
   );
 };

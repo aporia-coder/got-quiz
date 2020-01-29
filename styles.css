@@ -109,14 +109,16 @@ body {
   z-index: 1;
   padding: 1rem;
   margin: 1.2rem;
-  border-radius: 5px;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
   font: inherit;
+  text-decoration: none;
   font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .btn-light {
+  font-family: inherit;
   background-color: #fff;
   color: #000;
 }
@@ -126,5 +128,26 @@ body {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #575656;
   background-blend-mode: multiply, multiply;
   color: #fff;
+  border: 1px solid #cfcfcf;
+}
+
+.btn-span {
+  border: 0;
+  font-family: inherit;
+}
+
+.quote-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30vw;
+  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Questions = () => {
+const Questions = ({ characters }) => {
   const [char, setChar] = useState("");
   const [quote, setQuote] = useState("");
 
@@ -21,7 +21,13 @@ const Questions = () => {
     setChar(data.character);
   };
 
-  return <h1></h1>;
+  return (
+    <div>
+      {characters.map(char => (
+        <h1>{char}</h1>
+      ))}
+    </div>
+  );
 };
 
 export default Questions;
