@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import Questions from "./components/Questions";
@@ -19,11 +20,14 @@ const App = () => {
   ];
 
   return (
-    <>
+    <Router>
       <Nav />
-      <Title />
-      <Questions characters={characters} />
-    </>
+      <Route path exact="/" component={Title} />
+      <Route
+        path="/game"
+        render={() => <Questions characters={characters} />}
+      />
+    </Router>
   );
 };
 
