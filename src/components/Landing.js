@@ -1,12 +1,12 @@
 import React from "react";
 
-const Landing = ({ Title }) => {
+const Landing = () => {
   const handleSubmit = e => {};
 
   return (
-    <section>
+    <>
       <div className="landing">{Title}</div>
-    </section>
+    </>
   );
 };
 

@@ -10,7 +10,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.landing {
+.title {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -21,7 +21,7 @@ body {
   background: url(./src/assets/showcase-img.jpg) no-repeat center center / cover;
 }
 
-.landing::after {
+.title::after {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -124,17 +124,5 @@ body {
   &-span {
     border: 0;
     font-family: inherit;
-  }
-}
-
-.quote {
-  &-container {
-    display: flex;
-    width: 30vw;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(200, 200, 200);
   }
 }

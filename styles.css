@@ -9,7 +9,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.landing {
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@ body {
   background: url(./src/assets/showcase-img.jpg) no-repeat center center/cover;
 }
 
-.landing::after {
+.title::after {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -134,20 +134,5 @@ body {
 .btn-span {
   border: 0;
   font-family: inherit;
-}
-
-.quote-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 30vw;
-  height: 50vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

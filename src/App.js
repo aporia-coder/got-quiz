@@ -22,7 +22,7 @@ const App = () => {
     <>
       <Nav />
       <Title />
-      {/* <Questions characters={characters} /> */}
+      <Questions characters={characters} />
     </>
   );
 };

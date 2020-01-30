@@ -5,7 +5,7 @@ const Title = () => {
 
   return (
     <section>
-      <div className="landing">
+      <div className="title">
         <h1 className="text-main">A Quiz of Ice and Fire</h1>
         <p className="text-secondary">
           Test your knowledge of the Game of Thrones universe
