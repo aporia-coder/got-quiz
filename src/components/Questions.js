@@ -16,14 +16,18 @@ const Questions = ({ characters }) => {
     setQuote(data.quote);
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    selectedChar === char ? console.log("true") : console.log("false");
+  };
+
+  const quoteMarks = `'${quote}'`;
 
   return (
     <div>
-      <h2>{quote}</h2>
+      <h2>{quoteMarks}</h2>
       <form onSubmit={handleSubmit}>
         {characters.map((char, i) => (
-          <div>
+          <div key={i}>
             <input
               id={char}
               type="radio"
