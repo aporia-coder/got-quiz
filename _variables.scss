@@ -1,1 +1,11 @@
 $secondary-color: #ee1b1b;
+
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+$sides: (top, right, bottom, left);
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)-#{$space}} {
+      margin-#{$side}: #{$space}rem;
+    }
+  }
+}

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Landing from "./components/Landing";
 import Nav from "./components/Nav";
-import Questions from "./components/Questions";
-import Title from "./components/Title";
+import Game from "./components/Game";
+import Landing from "./components/Landing";
 
 const App = () => {
   const characters = [
@@ -22,11 +21,11 @@ const App = () => {
   return (
     <Router>
       <Nav />
-      <Route path exact="/" component={Title} />
-      <Route
-        path="/game"
-        render={() => <Questions characters={characters} />}
-      />
+      <Switch>
+        <Route path exact="/" component={Landing} />
+        <Route path="/game" render={() => <Game characters={characters} />} />
+        <Route path="/login" />
+      </Switch>
     </Router>
   );
 };
