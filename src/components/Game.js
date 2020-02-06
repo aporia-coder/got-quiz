@@ -4,16 +4,19 @@ const Game = ({ characters }) => {
   const [char, setChar] = useState("");
   const [quote, setQuote] = useState("");
   const [selectedChar, setSelectedChar] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getChar();
   }, []);
 
   const getChar = async () => {
+    setLoading(true);
     const response = await fetch("https://got-quotes.herokuapp.com/quotes");
     const data = await response.json();
     setChar(data.character);
     setQuote(data.quote);
+    setLoading(false);
   };
 
   const handleSubmit = () => {
@@ -37,7 +40,9 @@ const Game = ({ characters }) => {
               <span name="got">{char}</span>
             </div>
           ))}
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={loading}>
+            Submit
+          </button>
         </form>
       </div>
     </div>

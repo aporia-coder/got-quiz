@@ -9,7 +9,7 @@ const Nav = () => {
         <i className="fas fa-align-left icon burger"></i>
         <img src={Logo} alt="got-header" className="logo" />
         <ul className="nav-list">
-          <Link to="/" className="nav-links">
+          <Link to exact="/" className="nav-links">
             Home
           </Link>
           <Link className="nav-links">Sign Up</Link>
