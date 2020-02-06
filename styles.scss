@@ -6,8 +6,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "game_of_thronesregular";
+  src: url("./src/assets/fonts/game_of_thrones-webfont.woff2") format("woff2"),
+    url("./src/assets/fonts/game_of_thrones-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "Raleway", sans-serif;
+  // font-family: "Raleway", sans-serif;
+  font-family: "game_of_thronesregular";
   line-height: 1.6;
 }
 
