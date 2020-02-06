@@ -22,8 +22,8 @@ const Game = ({ characters }) => {
 
   return (
     <div className="title">
-      <div className="gamebox">
-        <form onSubmit={handleSubmit}>
+      <div className="game-container">
+        <form className="p-4" onSubmit={handleSubmit}>
           <h2>{`'${quote}'`}</h2>
           {characters.map((char, i) => (
             <div key={i}>
