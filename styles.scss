@@ -16,8 +16,12 @@
 
 body {
   // font-family: "Raleway", sans-serif;
-  font-family: "game_of_thronesregular";
+  font-family: $got-font;
   line-height: 1.6;
+}
+
+.secondary-font {
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -114,6 +118,7 @@ a {
   &-secondary {
     @extend .text;
     font-size: 20px;
+    font-family: "Raleway", sans-serif;
   }
 }
 
@@ -128,7 +133,6 @@ a {
   border: 1px solid rgba(0, 0, 0, 0);
   &-light {
     @extend .btn;
-    font-family: inherit;
     background-color: #fff;
     color: #000;
     &:hover {
